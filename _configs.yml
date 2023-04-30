@@ -1,4 +1,4 @@
-theme: minimal-mistakes-jekyll
+remote_theme: mmistakes/minimal-mistakes-jekyll
 title: MezereonXP-Blog
 author: MezereonXP
 description: This is my blog site.
