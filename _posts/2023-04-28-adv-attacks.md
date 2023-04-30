@@ -141,7 +141,6 @@ $$
 x_{0i} &if  \lvert z_i-x_{0i}\rvert <\beta \\ 
 max\{z_i+\beta, 0\} & if\ z_i-x_{0i}<-\beta 
 \end{cases}
-\end{align}
 $$
 
 $S_\beta(\cdot)$函数本质上是对构造的对抗样本和干净的输入$x_0$进行比对和压缩，将变化范围压缩到0和1之间。
