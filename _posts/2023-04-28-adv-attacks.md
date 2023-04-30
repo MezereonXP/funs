@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "浅谈深度学习中的对抗样本及其生成方法"
 date: 2023-04-28
 usemathjax: true
+categories: [对抗样本]
+tags: [对抗样本] 
 ---
 
 * TOC
