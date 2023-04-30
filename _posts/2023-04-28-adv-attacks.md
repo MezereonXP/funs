@@ -136,11 +136,11 @@ $$
 并且，
 $$
 [S_\beta(z)]_i = 
-\begin{case} 
+\begin{cases} 
 \min\{z_i-\beta, 1\} & if \ z_i-x_{0i} > \beta \\
 x_{0i} &if  \lvert z_i-x_{0i}\rvert <\beta \\ 
 max\{z_i+\beta, 0\} & if\ z_i-x_{0i}<-\beta 
-\end{case}
+\end{cases}
 \end{align}
 $$
 
