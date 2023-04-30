@@ -82,7 +82,7 @@ $$minimize\ D(x, x+\delta) + c\cdot f(x+\delta) \\ s.t. \ \  x + \delta \in [0,1
 $$f(x')=max(max\{Z(x')_i:i\neq t\}-Z(x')_t, -k)$$
 
 其中$Z(x')$为softmax层之前的向量，$f(x)$用来作为目标函数进行优化，整个优化目标为
-$$minimize\ \ ||\frac{1}{2}(tanh(\omega)+1)-x||+c\cdot f(\frac{1}{2}(tanh(\omega)+1))$$
+$$minimize\ \ \Vert\frac{1}{2}(tanh(\omega)+1)-x\Vert+c\cdot f(\frac{1}{2}(tanh(\omega)+1))$$
 
 
 #### PGD
@@ -109,7 +109,7 @@ $clip_{x,\varepsilon}(\cdot)$函数用于进行截断，使得整体的噪声不
 
 MIM全称是Momentum Iterative Method，是有Dong等人在2018年的“Boosting Adversarial Attacks with Momentum”中提出来的，在FGSM的基础上，加入了迭代和动量项，形式如下：
 
-$$g_{t+1} = \mu\cdot g_{t} + \frac{\nabla_x(J(x_t,y))}{||\nabla_x(J(x_t, y))||_1} \\ x_{t+1}=x_t+\alpha\cdot sign(g_{t+1})$$
+$$g_{t+1} = \mu\cdot g_{t} + \frac{\nabla_x(J(x_t,y))}{\Vert\nabla_x(J(x_t, y))\Vert_1} \\ x_{t+1}=x_t+\alpha\cdot sign(g_{t+1})$$
 
 #### EAD
 
