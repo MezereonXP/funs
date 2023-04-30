@@ -112,9 +112,10 @@ MIM全称是Momentum Iterative Method，是有Dong等人在2018年的“Boosting
 $$
 \begin{align}
     g_{t+1} &= \mu\cdot g_{t} + \frac{\nabla_x(J(x_t,y))}{\Vert\nabla_x(J(x_t, y))\Vert_1} \\
-    x_{t+1} &= x_t+\alpha\cdot sign(g_{t+1}) 
+    x_{t+1} &= x_t + \alpha\cdot sign(g_{t+1}) 
 \end{align}
 $$
+
 
 #### EAD
 
@@ -124,8 +125,8 @@ EAD全称是Elastic-Net Attacks to DNNs，是由chen等人在2018年的“EAD: E
 其形式如下：
 $$
 \begin{align}
-    x^{(k+1)}=S_{\beta}(y^{(k)}-\alpha_k\nabla(g(y^{(k)}))) \\
-    y^{(k+1)}=x^{(k+1)}+\frac{k}{k+3}(x^{(k+1)}-x^{(k)})
+    x^{(k+1)}&=S_{\beta}(y^{(k)}-\alpha_k\nabla(g(y^{(k)}))) \\
+    y^{(k+1)}&=x^{(k+1)}+\frac{k}{k+3}(x^{(k+1)}-x^{(k)})
 \end{align}
 $$
 
