@@ -108,10 +108,9 @@ $clip_{x,\varepsilon}(\cdot)$函数用于进行截断，使得整体的噪声不
 #### MIM
 
 MIM全称是Momentum Iterative Method，是有Dong等人在2018年的“Boosting Adversarial Attacks with Momentum”中提出来的，在FGSM的基础上，加入了迭代和动量项，形式如下：
-
 $$
 \begin{align}
-    g_{t+1} &= \mu\cdot g_{t} + \frac{\nabla_x(J(x_t,y))}{\Vert\nabla_x(J(x_t, y))\Vert_1} \\
+    g_{t+1} &= \mu\cdot g_{t} + \frac{\nabla_x(J(x_t, y))}{\Vert\nabla_x(J(x_t, y))\Vert_1} \\
     x_{t+1} &= x_t + \alpha\cdot sign(g_{t+1}) 
 \end{align}
 $$
