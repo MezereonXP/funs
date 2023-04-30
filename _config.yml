@@ -3,8 +3,5 @@ title: MezereonXP-Blog
 author: MezereonXP
 description: This is my blog site.
 markdown: kramdown
-plugins:
-  - jekyll-mathjax-csp
-
-mathjax_csp:
-  strip_css: true
+kramdown:
+  math_engine: katex
