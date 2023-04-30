@@ -1,4 +1,3 @@
-# Funs
+# MezereonXP
 
-> It is a repo for fun works
-
+This is a personal blog of MezereonXP.
