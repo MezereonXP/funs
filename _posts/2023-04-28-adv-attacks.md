@@ -109,7 +109,12 @@ $clip_{x,\varepsilon}(\cdot)$函数用于进行截断，使得整体的噪声不
 
 MIM全称是Momentum Iterative Method，是有Dong等人在2018年的“Boosting Adversarial Attacks with Momentum”中提出来的，在FGSM的基础上，加入了迭代和动量项，形式如下：
 
-$$g_{t+1} = \mu\cdot g_{t} + \frac{\nabla_x(J(x_t,y))}{\Vert\nabla_x(J(x_t, y))\Vert_1} \\ x_{t+1}=x_t+\alpha\cdot sign(g_{t+1})$$
+$$
+\begin{align} 
+    g_{t+1} = \mu\cdot g_{t} + \frac{\nabla_x(J(x_t,y))}{\Vert\nabla_x(J(x_t, y))\Vert_1} \\
+    x_{t+1}=x_t+\alpha\cdot sign(g_{t+1}) 
+\end{align}
+$$
 
 #### EAD
 
@@ -117,7 +122,12 @@ EAD全称是Elastic-Net Attacks to DNNs，是由chen等人在2018年的“EAD: E
 其也是迭代的形式，有点类似MIM和C&W的结合。
 
 其形式如下：
-$$x^{(k+1)}=S_{\beta}(y^{(k)}-\alpha_k\nabla(g(y^{(k)}))) \\ y^{(k+1)}=x^{(k+1)}+\frac{k}{k+3}(x^{(k+1)}-x^{(k)})$$
+$$
+\begin{align}
+    x^{(k+1)}=S_{\beta}(y^{(k)}-\alpha_k\nabla(g(y^{(k)}))) \\
+    y^{(k+1)}=x^{(k+1)}+\frac{k}{k+3}(x^{(k+1)}-x^{(k)})
+\end{align}
+$$
 
 其中，$g(x) = c\cdot f(x) + \Vert x-x_0\Vert_2$
 
