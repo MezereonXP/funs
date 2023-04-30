@@ -4,3 +4,5 @@ title: MezereonXP-Blog
 author: MezereonXP
 description: This is my blog site.
 markdown: kramdown
+timezone: +0800
+avatar: assets/avatar.jpeg
