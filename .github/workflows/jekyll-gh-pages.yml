@@ -36,7 +36,7 @@ jobs:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       - name: Build site
         run: |
-          bundle install
+          bundle
           JEKYLL_ENV=production bundle exec jekyll build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
