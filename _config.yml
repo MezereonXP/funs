@@ -1,4 +1,4 @@
-remote_theme: MezereonXP/jekyll-theme-chirpy
+theme: jekyll-theme-chirpy
 title: MezereonXP-Blog
 author: MezereonXP
 description: This is my blog site.
