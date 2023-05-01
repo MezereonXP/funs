@@ -2,6 +2,5 @@ remote_theme: MezereonXP/jekyll-theme-chirpy
 title: MezereonXP-Blog
 author: MezereonXP
 description: This is my blog site.
-markdown: kramdown
-timezone: +0800
+timezone: Asia/Shanghai
 avatar: assets/avatar.jpeg
