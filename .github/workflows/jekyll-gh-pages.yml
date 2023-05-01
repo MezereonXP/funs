@@ -28,6 +28,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Move to site directory
+        run: cd funs
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Setup Ruby
@@ -35,16 +37,11 @@ jobs:
         with:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       - name: Install dependencies
-        uses: actions/cache@v2
-        with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gems-
-      - name: Build site
         run: |
-          bundle
-          JEKYLL_ENV=production bundle exec jekyll build
+          gem install bundler
+          bundle install
+      - name: Build site
+        run: JEKYLL_ENV=production bundle exec jekyll build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
 
