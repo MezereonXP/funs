@@ -2,7 +2,7 @@
 title: "通过对抗训练来提高图像识别的精度"
 date: 2023-05-01 13:38:00 +0800
 math: true
-categories: [对抗样本]
+categories: [AI安全]
 tags: [对抗训练, 图像识别] 
 ---
 

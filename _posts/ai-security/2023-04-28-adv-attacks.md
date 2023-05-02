@@ -2,7 +2,7 @@
 title: "浅谈深度学习中的对抗样本及其生成方法"
 date: 2023-04-28 00:00:00 +0800
 math: true
-categories: [对抗样本]
+categories: [AI安全]
 tags: [对抗样本] 
 ---
 
