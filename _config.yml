@@ -21,7 +21,7 @@ timezone: Asia/Shanghai
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-tagline: A text-focused Jekyll theme # it will display as the sub-title
+tagline: Enjoy your life. # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   This is my blog site.
